@@ -1,0 +1,227 @@
+* {
+    box-sizing: border-box;
+    color: black;
+    font-family: Montserrat;
+}
+
+#app-container {
+    display         : block;
+    min-height      : 100vh;
+    width           : 100%;
+    @media screen and (max-width: 768px) {
+        display: inline-block;
+        height: 100%;
+    }
+}
+
+html {
+    @media only screen and (max-width: 800px) {
+        font-size: 9px;
+    }
+
+    @media (min-width: 800px)  and (max-width: 1280px) {
+        font-size: 12px;
+    }
+
+    @media (min-width: 1280px) and (max-width: 1440px) {
+        font-size: 14px;
+    }
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.show-dropdown {
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #181c3a;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: #f44336;
+}
+
+.gray{
+    color: transparent;
+    text-shadow: grey 0px 0px 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.row{
+    // width: 100%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-30{
+    width: 30px;
+}
+
+.mr-10{
+    margin-right: 10px !important;
+}
+
+.mt-10{
+    margin-top: 10px !important;
+}
+
+.mt-15{
+    margin-top: 15px !important;
+}
+
+.mt-30{
+    margin-top: 30px !important;
+}
+
+.mt-40{
+    margin-top: 40px !important;
+}
+
+.primary-button {
+    width           : 100%;
+    max-width       : 200px;
+    margin          : 1rem auto 0 auto;
+    display         : block;
+    background-color: #f8b94b;
+    font-size       : 1.3rem;
+    border-radius   : 0.4rem;
+    padding         : 0.3rem;
+}
+
+.link-address{
+    color: white;
+    &:hover{
+        color: #ff4a21;
+    }
+}
+
+.dashboard-wrapper{
+    padding: 0 15px;
+    height: 100%;
+    @media only screen and (max-width: 600px) {
+        padding: 0;
+    }
+}
+
+.mobile-mb-20{
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+}
+
+.loading {
+    display          : inline-block;
+    width            : 50px;
+    height           : 50px;
+    border           : 5px solid rgba(#f8b94b, 0.2);
+    border-radius    : 50%;
+    border-top-color : #f8b94b;
+    animation        : spin 1s ease-in-out infinite;
+    -webkit-animation: spin 1s ease-in-out infinite;
+    left             : calc(50% - 15px);
+    top              : calc(50% - 15px);
+    position         : fixed;
+    z-index          : 1;
+}
+
+@keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.status-circle{
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #09d395;
+    margin-right: 21px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.button-disabled{
+    background-color: #d3d3d3 !important;
+    background-image: none !important;
+}
+
+.container-fluid{
+    min-height: 100vh;
+    @media only screen and (max-width: 600px) {
+        padding: 0;
+    }
+}
+
+.input-search{
+    position: absolute;
+    fill: black;
+    bottom: 12px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.row{
+    margin: 0;
+}
+
+.h-100{
+    height: 100%;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
